@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+DDoS Guardian — Frontend (Traffic Pattern Based DDoS Detection)
 
-## Project info
 
-**URL**: https://lovable.dev/projects/853518e9-043f-4555-9275-df56798f28d7
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+🚀 DDoS Guardian is a project aimed at detecting and preventing DDoS attacks using supervised learning.
+👉 Currently, only the frontend is complete and deployed on Vercel. The backend with ML models and APIs will be added in the next phase.
 
-**Use Lovable**
+✨ Features (Frontend)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/853518e9-043f-4555-9275-df56798f28d7) and start prompting.
+Responsive UI built with React + Tailwind CSS
 
-Changes made via Lovable will be committed automatically to this repo.
+Pages for Traffic Pattern Visualization
 
-**Use your preferred IDE**
+Mock/Static data integration for demo purposes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Deployed and live on Vercel
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🧱 Tech Stack
 
-Follow these steps:
+Frontend: React, Tailwind CSS
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Deployment: Vercel
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Backend (Planned): Node/Express or Spring Boot (not yet implemented)
 
-# Step 3: Install the necessary dependencies.
-npm i
+ML Models (Planned): Random Forest, SVM, Decision Tree
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🔗 Live Demo
+
+Frontend: https://ddos-gaurdian.vercel.app/
+
+📦 Project Structure (Current)
+ddos-gaurdian/
+├─ frontend/                  # React app (deployed on Vercel)
+│  ├─ public/
+│  ├─ src/
+│  │  ├─ components/          # UI components (charts, cards, layouts)
+│  │  ├─ pages/               # React pages
+│  │  └─ styles/              # Tailwind / CSS
+│  ├─ package.json
+│  └─ README.md
+└─ backend/                   # (Work in progress - ML + API service)
+
+🚀 Running Locally (Frontend)
+# clone the repo
+git clone https://github.com/<your-username>/ddos-gaurdian.git
+cd ddos-gaurdian/frontend
+
+# install dependencies
+npm install
+
+# run in development
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+# open http://localhost:3000
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🛠 Planned Work (Next Phase)
 
-**Use GitHub Codespaces**
+Backend APIs → Feature extraction, ML-based detection, and prevention actions
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Model Integration → Random Forest, SVM, Decision Tree on labeled datasets
 
-## What technologies are used for this project?
+Real-Time Traffic Support → API for streaming and classification
 
-This project is built with:
+Firewall/IPS Hooks → Integration for mitigation actions
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+📄 License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/853518e9-043f-4555-9275-df56798f28d7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT — free to use and modify.
